@@ -7,6 +7,7 @@ Prerequisites:
 + Eigen
 
 It's an implementation of a simple idea. I want to efficiently plan a region where the vehicle is free to go. The algorithm only uses a small subset of the Kitti lidar data per frame since most of the point cloud is redundant.
+The algorithm only need about 6ms to locate the road plane and estimate the curve. With the file reading and display stuff, it can take longer in total.
 
 The idea is quite simple, first we do the segmentation to locate the road plane.
 
